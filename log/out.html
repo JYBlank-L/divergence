@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://sauapp.sau.edu.cn/err/xmdj10.jsp -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="vXqNKnW2bbvLKBhahgFJNeE4f6ZkUNOzjRP0PGb1">
+    <title>沈阳航空航天大学出入登记</title>
+    <link href="./files/cc.css" rel="stylesheet" type="text/css">
+    <style>
+        @-webkit-keyframes pulse {
+            50% {
+                -webkit-transform: scale3d(1.2, 1.2, 1.2);
+                transform: scale3d(1.2, 1.2, 1.2);
+            }
+        }
+        @keyframes  pulse {
+            50% {
+                -webkit-transform: scale3d(1.2, 1.2, 1.2);
+                transform: scale3d(1.2, 1.2, 1.2);
+            }
+        }
+        .list-group {
+            padding: 1em;
+        }
+        .list-group-item {
+            font-size: 1.1em;
+            padding: 0.1em;
+            border: 0px;
+        }
+    .STYLE1 {font-size: 20px}
+    .STYLE2 {color: #666666}
+    </style>
+</head>
+<body>
+
+<div id="app">
+            <div class="card border-0 text-center" style="color: #87CEFA;">
+            <div class="card-body">
+                <h2 class="card-title" style="font-size: 1.8em;">沈航学生出门登记</h2>
+                <i class="animated infinite pulse fa p-4"><p>850231</p><img src="./files/outdoor.png"></i>
+                <p class="card-text" style="font-size: 1.4em;margin-top: 3em" id="ymd"></p>
+                <script>
+                    function showTime() {
+                        var date = new Date();
+                        var y = date.getFullYear();<!--年-->
+                        var m = date.getMonth()+1;<!--月，这里的月份必须要+1才是当前月份-->
+                        if (m<10) m="0"+m;
+                        var d = date.getDate(); <!--日，getDay是获得当前星期几（0-6），getDate是获得当前日期-->
+                        if (d<10) d="0"+d;
+                        var h=date.getHours();
+                        if (h<10) h="0"+h;
+                        var mon=date.getMinutes();
+                        if (mon<10) mon="0"+mon;
+                        var s=date.getSeconds();
+                        if (s<10) s="0"+s;
+                        document.getElementById("ymd").innerHTML = "时间："+y+"-"+m+"-"+d+" "+h+":"+mon+":"+s;
+                    }
+                    setInterval("showTime()",1000);
+                </script>
+                <script type="text/javascript" src="dtxt1.js"></script>
+              <p class="card-text" style="font-size: 1.4em;">今日第1次使用 出门               </p>
+                  <p class="card-text" style="font-size: 1.4em;">                </p>
+            </div>
+        </div>
+
+        <ul class="list-group list-group-flush" style="background-color: #28a745;">
+            <li class="list-group-item bg-transparent d-flex text-white font-weight-bold">
+                <div style="min-width: 4em; text-align-last: justify;">姓名</div>：<div>弓志超</div>
+            </li>
+            <li class="list-group-item bg-transparent d-flex text-white font-weight-bold">
+                <div style="min-width: 4em; text-align-last: justify;">学号</div>：<div>183417030208</div>
+            </li>
+
+
+
+				<li class="list-group-item bg-transparent d-flex text-white font-weight-bold">
+				   <div style="min-width: 4em; text-align-last: justify;">电话</div>：<div>18840617743</div>
+            </li>
+            <li class="list-group-item bg-transparent d-flex text-white font-weight-bold">
+                <div style="min-width: 4em; text-align-last: justify;">联系人</div>：<div>弓志超</div>
+            </li>
+
+
+
+
+        </ul>
+</div>
+      <div class="STYLE1">
+        <div align="center" class="STYLE2">信息网络中心提供相关技术支持</div>
+      </div>
+
+
+	</body></html>
