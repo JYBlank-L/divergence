@@ -61,7 +61,7 @@
                 }
                 setInterval("showTime()",1000);
             </script>
-            <script type="text/javascript" src="dtxt1.js"></script>
+            <script type="text/javascript"></script>
             <p class="card-text" style="font-size: 1.4em;">今日第1次使用 进门               </p>
             <p class="card-text" style="font-size: 1.4em;">                </p>
         </div>
@@ -74,14 +74,35 @@
         <li class="list-group-item bg-transparent d-flex text-white font-weight-bold">
             <div style="min-width: 4em; text-align-last: justify;">学号</div>：<div>183417030208</div>
         </li>
-
+        <li class="list-group-item bg-transparent d-flex text-white font-weight-bold">
+            <div style="min-width: 4em; text-align-last: justify;">体温</div>：<div>36.8</div>
+        </li>
 
 
         <li class="list-group-item bg-transparent d-flex text-white font-weight-bold">
             <div style="min-width: 4em; text-align-last: justify;">电话</div>：<div>18840617743</div>
         </li>
         <li class="list-group-item bg-transparent d-flex text-white font-weight-bold">
-            <div style="min-width: 4em; text-align-last: justify;">联系人</div>：<div>弓志超</div>
+            <div style="min-width: 4em; text-align-last: justify;">有效日期</div>：<div id="sj"></div>
+            <script>
+                function showTime1() {
+                    var date = new Date();
+                    var y = date.getFullYear();<!--年-->
+                    var m = date.getMonth()+1;<!--月，这里的月份必须要+1才是当前月份-->
+                    if (m<10) m="0"+m;
+                    var d = date.getDate(); <!--日，getDay是获得当前星期几（0-6），getDate是获得当前日期-->
+                    if (d<10) d="0"+d;
+                    var h=date.getHours();
+                    if (h<10) h="0"+h;
+                    var mon=date.getMinutes();
+                    if (mon<10) mon="0"+mon;
+                    var s=date.getSeconds();
+                    if (s<10) s="0"+s;
+                    document.getElementById("sj").innerHTML = y+"-"+m+"-"+d+"--"+y+"-"+m+"-"+d;
+                }
+                setInterval("showTime1()",1000);
+            </script>
+            <script type="text/javascript"></script>
         </li>
 
 
