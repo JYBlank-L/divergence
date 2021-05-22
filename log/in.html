@@ -76,7 +76,11 @@
             </script>
         </li>
         <li class="list-group-item bg-transparent d-flex text-white font-weight-bold">
-            <div style="min-width: 4em; text-align-last: justify;">学号</div>：<div>183417030208</div>
+            <div style="min-width: 4em; text-align-last: justify;">学号</div>：<div id="xuehao">183417030208</div>
+            <script>
+                let xuehao=window.sessionStorage.getItem("xuehao");
+                document.getElementById("xuehao").innerHTML = xuehao;
+            </script>
         </li>
         <li class="list-group-item bg-transparent d-flex text-white font-weight-bold">
             <div style="min-width: 4em; text-align-last: justify;">体温</div>：<div>36.8</div>
