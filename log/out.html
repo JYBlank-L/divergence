@@ -66,7 +66,11 @@
 
         <ul class="list-group list-group-flush" style="background-color: #28a745;">
             <li class="list-group-item bg-transparent d-flex text-white font-weight-bold">
-                <div style="min-width: 4em; text-align-last: justify;">姓名</div>：<div>弓志超</div>
+                <div style="min-width: 4em; text-align-last: justify;">姓名</div>：<div id="name">弓志超</div>
+                <script>
+                    let names=window.sessionStorage.getItem("name");
+                    document.getElementById("name").innerHTML = names;
+                </script>
             </li>
             <li class="list-group-item bg-transparent d-flex text-white font-weight-bold">
                 <div style="min-width: 4em; text-align-last: justify;">学号</div>：<div>183417030208</div>
@@ -78,7 +82,10 @@
 				   <div style="min-width: 4em; text-align-last: justify;">电话</div>：<div>18840617743</div>
             </li>
             <li class="list-group-item bg-transparent d-flex text-white font-weight-bold">
-                <div style="min-width: 4em; text-align-last: justify;">联系人</div>：<div>弓志超</div>
+                <div style="min-width: 4em; text-align-last: justify;">联系人</div>：<div id="name1"></div>
+                <script>
+                    document.getElementById("name1").innerHTML = names;
+                </script>
             </li>
 
 

@@ -23,11 +23,25 @@
     </style>
 </head>
 <body>
-<a href="in.html">
-    <button s>进</button>
-</a>
-<a href="out.html">
-    <button>出</button>
-</a>
+<p>
+    <a href="in.html">
+        <button onclick="getName()">进</button>
+    </a>
+</p>
+<p>
+    <a href="out.html">
+        <button onclick="getName()">出</button>
+    </a>
+</p>
+<p>
+    <input type="text" id="name">
+</p>
+<script>
+    function getName() {
+        var name=document.getElementById('name').value;
+        window.sessionStorage.setItem("name",name);
+        console.log(name);
+    }
+</script>
 </body>
 </html>
